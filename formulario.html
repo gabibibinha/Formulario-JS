@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 id="titulo">Preencha o formulário</h1>
+    <form id="meuForm">
+        <p> Bem-vindo ao Formulário Básico</p>
+        <div>
+            <label for="Name">Nome: </label>
+            <input type="text" id="name" placeholder="Digite seu nome">
+        </div>
+
+        <div>
+            <label for="email">Email: </label>
+            <input type="text" id="email" placeholder="Digite seu email">
+        </div>
+        
+        <div>
+            <label for="password">Senha: </label>
+            <input type="password" id="password" placeholder="Digite sua senha">
+        </div>
+
+        <fieldset>
+            <legend> Selecione seu gênero: </legend>
+            <div>
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="genero1" name="masculino" value="masculino"/>
+            </div>
+    
+            <div>
+                <label for="feminino">Feminino</label>
+                <input type="radio" id="genero2" name="feminino" value="feminino"/>
+            </div>    
+        </fieldset>
+
+        <fieldset>
+            <legend> Selecione seu país de origem: </legend>
+            <div>
+                <label for="brasil">Brasil</label>
+                <input type="radio" id="pais1" name="brasil" value="brasil"/>
+            </div>
+
+            <div>
+                <label for="estadosunidos">Estados Unidos</label>
+                <input type="radio" id="pais2" name="estadosunidos" value="estadosunidos"/>
+            </div>
+
+            <div>
+                <label for="japao">Japão</label>
+                <input type="radio" id="pais3" name="japao" value="japao"/>
+            </div>
+
+            <div>
+                <label for="suecia">Suécia</label>
+                <input type="radio" id="pais4" name="suecia" value="suecia"/>
+            </div>
+        </fieldset>
+
+        <div>
+            <label for="comentary">Comentários: </label>
+            <textarea id="comentary" name="comentary" rows="5" cols="33"></textarea>
+        </div>
+
+        <button type="submit">Enviar formulário</button>
+    </form>
+    <div id="erroMsg" style="color: red"></div>
+
+    <script src="form.js" type="module"></script>
+</body>
+</html>
